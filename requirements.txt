@@ -1,0 +1,33 @@
+# Backend
+fastapi
+uvicorn
+pydantic
+faiss-cpu
+sentence-transformers
+pytesseract
+pdf2image
+Pillow
+google-generativeai
+python-dotenv
+numpy
+langchain
+nltk
+
+tavily-python
+
+# Frontend
+streamlit
+requests
+
+python-multipart>=0.0.5
+langdetect
+llama-index-core
+indic-nlp-library
+
+#llm clients
+rank_bm25
+groq
+python-docx
+beautifulsoup4
+pandas
+openpyxl
