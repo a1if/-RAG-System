@@ -12,7 +12,18 @@ git clone https://github.com/a1if/-RAG-System.git
 cd -RAG-System
 ```
 
-### 2. Install Dependencies
+### 2. Create a Virtual Environment
+
+It is highly recommended to create a virtual environment to manage project dependencies. This ensures that the project's dependencies do not conflict with other Python projects on your system.
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+```
+
+After activating the virtual environment, proceed to install the dependencies.
+
+### 2.1. Install Dependencies
 
 This project uses `pip` for dependency management. Ensure you have Python 3.8+ installed.
 
@@ -21,6 +32,21 @@ pip install -r requirements.txt
 ```
 
 
+### 2.2. Create a `.env` file
+
+Before running the project, create a `.env` file in the root directory of the project. This file will store your API keys and other sensitive information. A typical `.env` file might look like this:
+
+```
+GOOGLE_API_KEY=your_google_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
+GEMINI_API_KEY=
+BACKEND_HOST=0.0.0.0
+BACKEND_PORT=8000
+TAVILY_API_KEY=
+GROQ_API_KEY=
+```
+
+Replace `your_google_api_key_here` , `your_groq_api_key_here` and 'TAVILY_API_KEY' with your actual API keys. You can obtain these from the respective platform websites.
 
 
 ### 3. Running the Application
@@ -48,18 +74,3 @@ The repository is organized into the following key directories:
 
 
 
-### 2.1. Create a `.env` file
-
-Before running the project, create a `.env` file in the root directory of the project. This file will store your API keys and other sensitive information. A typical `.env` file might look like this:
-
-```
-GOOGLE_API_KEY=your_google_api_key_here
-GROQ_API_KEY=your_groq_api_key_here
-GEMINI_API_KEY=
-BACKEND_HOST=0.0.0.0
-BACKEND_PORT=8000
-TAVILY_API_KEY=
-GROQ_API_KEY=
-```
-
-Replace `your_google_api_key_here` , `your_groq_api_key_here` and 'TAVILY_API_KEY' with your actual API keys. You can obtain these from the respective platform websites.
